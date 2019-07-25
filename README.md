@@ -1,6 +1,21 @@
 # cv-learn
 Things related to Computer Vision
 
+## Preprocessing Pipeline
+
+There are several pipeline operations that can be done to improve the extraction pipeline:
+
+- contrast/brightness correction
+- rotate/resize
+- blur
+- grayscale
+- separate foreground from background
+- deskew
+- remove noise (long horizontal/vertical lines, unrelated subject)
+- contour selection
+
+There are no right and wrong steps/order. But to optimize it, we can run several preprocessing pipelines simulataneously. For images that are already clean (scanned documents), applying too many preprocessing might remove the subject of interest. For images that are not clean (photo taken with poor camera), there might be too many noise that requires heavy preprocessing to correct.
+
 ## Information Extraction
 
 Information extraction (IE) is the task of automatically extracting structured information from unstructured and/or semi-structured machine-readable documents.
